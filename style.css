@@ -1,0 +1,187 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Pen+Script&family=Noto+Sans+KR&display=swap');
+
+
+
+html, body {
+    margin: 0;
+    padding: 0;
+}
+
+.blur-background {
+    background-image: url("../quiz/img/2.jpeg"); /* 배경 이미지 경로 지정 */
+    background-size: cover; /* 이미지를 커버하도록 설정 */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    filter: blur(2px); /* 흐림 효과를 적용할 정도를 지정 (px 단위) */
+    -webkit-backdrop-filter: blur(10px); /* Safari 브라우저 지원을 위한 접두사 */
+    backdrop-filter: blur(1px);
+    z-index: -1; /* 다른 콘텐츠 위에 배경이 흐리게 나타나도록 z-index 설정 */
+}
+
+
+.hide {
+    display: none;
+}
+
+h1 {
+    text-align: center;
+    margin-top: 15vh;
+    font-size: 3rem;
+    color: white;
+}
+
+#user-name{
+    text-align: center;
+    font-family: 'Noto Sans KR', sans-serif;
+    display: flex;
+    justify-content: center;
+}
+
+#user-id {
+    font-size: 1.5rem;
+    color: white;
+}
+#form-group {
+    margin-top: 5vh;
+    text-align: center;
+}
+#login-input{
+    border-radius: 10px;
+    text-align: center;
+    height: 2vw;
+}
+input::placeholder {
+    text-align: center;
+    line-height: inherit;
+}
+#login-button {
+    background-color: #1976E2;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    margin-left: 1vw;
+    width: 5vw;
+    height: 4vh;
+}
+#start-button-container {
+    text-align: center;
+    margin-top: 5%;
+}
+
+#quiz-container {
+    text-align: center;
+    color: white;
+}
+
+#button-container {
+    text-align: center;
+    margin-top: 5vh;
+}
+
+.logOut {
+    margin-left: 3vw;
+    background-color: #BDBDBD;
+    color: black;
+    border: 0px;
+    border-radius: 5px;
+    font-size: large;
+    font-family: 'Noto Sans KR', sans-serif;
+}
+
+#start-button {
+    width: 25%;
+    height: 5vh;
+    background-color: #1976E2;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    font-size: large;
+}
+
+.O {
+    width: 12vw;
+    background-color: #E0E0E0;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    font-size: large;
+}
+
+.X {
+    width: 12vw;
+    margin-left: 3vw;
+    background-color: #E0E0E0;
+    color: white;
+    border: 0px;
+    border-radius: 5px;
+    font-size: large;
+}
+
+#image {
+    display: flex;
+    justify-content: center;
+}
+.jieurring{
+    width: 35%;
+    height: 70vh;
+    margin-bottom: 15vh;
+    margin-top: 5vh;
+}
+
+footer{
+    position: fixed;
+    bottom: 0;
+    text-align: center;
+    width: 100%;
+    background-color: #333;
+    color: white;
+    height: 10vh;
+    line-height: 10vh;
+}
+
+.quiz {
+    font-family: 'Nanum Pen Script', cursive;
+    font-size: 3rem;
+}
+.answer {
+    border-radius: 10px;
+    text-align: center;
+    margin-top: 5vh;
+}
+
+@media screen and (max-width: 576px) {
+    .jieurring{
+        width: 80%;
+        height: 50vh;
+    }
+
+    .O{
+        width: 30%;
+    }
+    .X{
+        width: 30%;
+    }
+    .answer{
+        width: 30vw;
+    }
+    .logOut{
+        margin-left: 5vw;
+    }
+    #login-button{
+        width: 15vw;
+    }
+    #login-input {
+        height: 6vw;
+    }
+    h1 {
+        font-size: 2.3rem;
+    }
+    .quiz{
+        font-size: 2.7rem;
+    }
+}
+
+
